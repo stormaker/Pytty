@@ -13,14 +13,13 @@ new_ws['B1'] = '订单号'
 new_ws['C1'] = '订购日期'
 new_ws['D1'] = '品名'
 new_ws['E1'] = '规格'
-new_ws['F1'] = '品名'
-new_ws['G1'] = '成分'
-new_ws['H1'] = '颜色'
-new_ws['I1'] = '色号'
-new_ws['J1'] = '数量'
-new_ws['K1'] = '单价'
-new_ws['L1'] = '备注'
-new_ws['M1'] = '2nd Item'
+new_ws['F1'] = '成分'
+new_ws['G1'] = '颜色'
+new_ws['H1'] = '色号'
+new_ws['I1'] = '数量'
+new_ws['J1'] = '单价'
+new_ws['K1'] = '备注'
+new_ws['L1'] = '2nd Item'
 
 # 初始行号
 row_number = 2
@@ -57,9 +56,9 @@ for filename in os.listdir('.'):
         new_ws[f'G{row_number}'] = color_data
         new_ws[f'H{row_number}'] = color_code_data
         new_ws[f'I{row_number}'] = qty_data
-        new_ws[f'K{row_number}'] = price_data
-        new_ws[f'L{row_number}'] = remark_date
-        new_ws[f'M{row_number}'] = second_item_date
+        new_ws[f'J{row_number}'] = price_data
+        new_ws[f'K{row_number}'] = remark_date
+        new_ws[f'L{row_number}'] = second_item_date
         # 更新行号
         row_number += 1
 
